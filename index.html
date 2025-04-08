@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 27: Máy tính và Khoa học Dữ liệu</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #001a00; /* Fallback color - very dark green */
+            color: #fff;
+            background-image: linear-gradient(to bottom, #00008b, #006400); /* Gradient xanh dương tối - xanh lá tối */
+            background-size: cover;
+            background-repeat: no-repeat;
+            backdrop-filter: blur(5px);
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: #00bfff;
+            border-bottom: 2px solid #555;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .section-button {
+            background-color: #00bfff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            display: block;
+            width: 100%;
+            text-align: left;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .section-button:hover {
+            background-color: #0077b3;
+        }
+        .section-content {
+            display: none; /* Initially hide all content */
+            padding-top: 10px;
+        }
+        h2 {
+            color: #00bfff;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-top: 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        strong {
+            color: #00bfff;
+        }
+        .footer {
+            text-align: center;
+            font-size: 0.8em;
+            color: #aaa;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bài 27: Máy tính và Khoa học Dữ liệu</h1>
+
+    <div class="container">
+        <button class="section-button" onclick="toggleSection('introduction')">1. Giới thiệu</button>
+        <div id="introduction" class="section-content">
+            <h2>1. Giới thiệu</h2>
+            <p>Khoa học dữ liệu là một lĩnh vực liên ngành kết hợp thống kê, toán học, khoa học máy tính và trí tuệ nhân tạo để khai thác, phân tích dữ liệu nhằm tìm ra thông tin có giá trị. Trong thời đại công nghệ số, dữ liệu đóng vai trò quan trọng trong mọi lĩnh vực, từ kinh doanh đến y tế, giáo dục và nghiên cứu khoa học.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <button class="section-button" onclick="toggleSection('role')">2. Vai trò của máy tính trong khoa học dữ liệu</button>
+        <div id="role" class="section-content">
+            <h2>2. Vai trò của máy tính trong khoa học dữ liệu</h2>
+            <p>Máy tính giúp tự động hóa quá trình thu thập, lưu trữ, xử lý và trực quan hóa dữ liệu. Nhờ vào sức mạnh tính toán, máy tính có thể xử lý khối lượng dữ liệu lớn với tốc độ cao và độ chính xác cao. Một số công cụ quan trọng trong khoa học dữ liệu bao gồm:</p>
+            <ul>
+                <li><strong>Ngôn ngữ lập trình:</strong> Python, R, SQL được sử dụng để phân tích và trực quan hóa dữ liệu.</li>
+                <li><strong>Các công cụ phân tích dữ liệu:</strong> Excel, Tableau, Power BI giúp trực quan hóa dữ liệu.</li>
+                <li><strong>Các nền tảng dữ liệu lớn:</strong> Apache Hadoop, Spark giúp xử lý dữ liệu lớn hiệu quả.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <button class="section-button" onclick="toggleSection('applications')">3. Ứng dụng của khoa học dữ liệu</button>
+        <div id="applications" class="section-content">
+            <h2>3. Ứng dụng của khoa học dữ liệu</h2>
+            <p>Khoa học dữ liệu có ứng dụng rộng rãi trong nhiều lĩnh vực, bao gồm:</p>
+            <ul>
+                <li><strong>Tài chính:</strong> Phân tích rủi ro, phát hiện gian lận, tối ưu hóa danh mục đầu tư.</li>
+                <li><strong>Y tế:</strong> Chẩn đoán bệnh bằng trí tuệ nhân tạo, nghiên cứu thuốc và phân tích hồ sơ y tế.</li>
+                <li><strong>Thương mại điện tử:</strong> Gợi ý sản phẩm, tối ưu hóa chuỗi cung ứng, phân tích hành vi khách hàng.</li>
+                <li><strong>Mạng xã hội:</strong> Phân tích xu hướng, phát hiện tin giả, cá nhân hóa nội dung.</li>
+                <li><strong>Trí tuệ nhân tạo:</strong> Xây dựng mô hình học máy, xử lý ngôn ngữ tự nhiên, nhận diện hình ảnh.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <button class="section-button" onclick="toggleSection('advantages')">4. Tính ưu việt của máy tính và thuật toán hiệu quả trong xử lý dữ liệu lớn</button>
+        <div id="advantages" class="section-content">
+            <h2>4. Tính ưu việt của máy tính và thuật toán hiệu quả trong xử lý dữ liệu lớn</h2>
+            <p>Với sự phát triển của dữ liệu lớn (Big Data), các thuật toán hiệu quả giúp tối ưu hóa việc xử lý và phân tích dữ liệu. Một số ưu điểm chính của máy tính và thuật toán trong khoa học dữ liệu bao gồm:</p>
+            <ul>
+                <li><strong>Tốc độ xử lý cao:</strong> Máy tính có thể xử lý hàng triệu bản ghi dữ liệu chỉ trong vài giây.</li>
+                <li><strong>Khả năng mở rộng:</strong> Các hệ thống dữ liệu lớn có thể mở rộng linh hoạt để xử lý lượng dữ liệu khổng lồ.</li>
+                <li><strong>Độ chính xác cao:</strong> Các thuật toán phân tích dữ liệu giúp giảm thiểu sai sót và tăng cường tính chính xác.</li>
+                <li><strong>Tự động hóa:</strong> Các quy trình phân tích dữ liệu có thể được tự động hóa, tiết kiệm thời gian và nhân lực.</li>
+                <li><strong>Học máy và AI:</strong> Các mô hình học máy có thể học từ dữ liệu và đưa ra dự đoán chính xác hơn theo thời gian.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <button class="section-button" onclick="toggleSection('conclusion')">5. Kết luận</button>
+        <div id="conclusion" class="section-content">
+            <h2>5. Kết luận</h2>
+            <p>Máy tính và khoa học dữ liệu đang thay đổi cách chúng ta tiếp cận và xử lý thông tin. Việc sử dụng các thuật toán tiên tiến cùng với công nghệ máy tính giúp tối ưu hóa việc khai thác dữ liệu, hỗ trợ ra quyết định chính xác hơn và mang lại lợi ích to lớn cho nhiều lĩnh vực.</p>
+        </div>
+    </div>
+
+    <div class="footer">Made by To 3 - 12Tin</div>
+
+    <script>
+        let currentVisibleSection = null;
+
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+
+            if (section) {
+                // Hide the currently visible section (if any)
+                if (currentVisibleSection && currentVisibleSection !== section) {
+                    currentVisibleSection.style.display = 'none';
+                }
+
+                // Toggle the visibility of the clicked section
+                if (section.style.display === 'none' || section.style.display === '') {
+                    section.style.display = 'block';
+                    currentVisibleSection = section;
+                } else {
+                    section.style.display = 'none';
+                    currentVisibleSection = null;
+                }
+            }
+        }
+
+        // Initially show the first section
+        document.addEventListener('DOMContentLoaded', function() {
+            toggleSection('introduction');
+        });
+    </script>
+</body>
+</html>
